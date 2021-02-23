@@ -30,8 +30,6 @@ public class SpinnerActivity extends AppCompatActivity implements View.OnClickLi
             Log.i("List", "Passed Array List :: " + arr);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item, arr);
             spinner.setAdapter(adapter);
-        }else{
-
         }
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
